@@ -9,7 +9,18 @@ Docker Image packaging for alpine-desktop.
 ## Usage
 
 ```bash
-docker run --name alpine-desktop -ti --rm snowdreamtech/alpine-desktop /bin/sh
+docker run --name alpine-desktop -ti --rm -d  -p 5901:5901 snowdreamtech/alpine-desktop /bin/sh
+```
+
+Default Environment:
+
+- DISPLAY=:1
+- RESOLUTION=1920x1080x24
+- VNC_PORT=5901
+- VNC_PASSWORD=root
+
+```bash
+docker run --name alpine-desktop -ti --rm -d  -p 5901:5901 -e VNC_PASSWORD=root snowdreamtech/alpine-desktop /bin/sh
 ```
 
 ## Quick reference
