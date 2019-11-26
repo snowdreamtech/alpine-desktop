@@ -10,6 +10,7 @@ ENV DISPLAY=:1 \
 
 RUN apk add --no-cache bash bash-completion alpine-desktop xfce4-terminal \
     faenza-icon-theme libc6-compat xvfb x11vnc \
+    harfbuzz nss  freetype ttf-freefont\
     midori firefox-esr 
 
 COPY docker-entrypoint.sh /usr/local/bin/
