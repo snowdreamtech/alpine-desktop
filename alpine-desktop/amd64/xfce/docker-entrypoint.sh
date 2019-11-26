@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 touch /root/.Xauthority
 mkdir /root/.vnc

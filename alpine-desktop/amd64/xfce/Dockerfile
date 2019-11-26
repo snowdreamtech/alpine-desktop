@@ -14,7 +14,7 @@ RUN echo @edge http://dl-cdn.alpinelinux.org/alpine/edge/main >> /etc/apk/reposi
     && apk add --no-cache bash bash-completion alpine-desktop xfce4-terminal \
     faenza-icon-theme libc6-compat xvfb x11vnc \
     harfbuzz nss  freetype ttf-freefont wqy-zenhei\
-    midori firefox
+    midori firefox-esr
 
 COPY docker-entrypoint.sh /usr/local/bin/
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
