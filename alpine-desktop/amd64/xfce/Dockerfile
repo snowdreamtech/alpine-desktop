@@ -13,7 +13,7 @@ RUN echo @edge http://dl-cdn.alpinelinux.org/alpine/edge/main >> /etc/apk/reposi
     && echo @testing http://dl-cdn.alpinelinux.org/alpine/edge/testing >> /etc/apk/repositories \
     && apk add --no-cache bash bash-completion alpine-desktop xfce4-terminal \
     faenza-icon-theme libc6-compat xvfb x11vnc \
-    harfbuzz nss  freetype ttf-freefont wqy-zenhei\
+    harfbuzz nss  freetype ttf-freefont wqy-zenhei@testing\
     midori firefox-esr
 
 COPY docker-entrypoint.sh /usr/local/bin/
