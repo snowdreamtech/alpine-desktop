@@ -12,7 +12,8 @@ ENV DISPLAY=:1 \
 
 RUN apk add --no-cache bash bash-completion alpine-desktop xfce4-terminal \
     faenza-icon-theme libc6-compat xvfb x11vnc \
-    midori firefox-esr 
+    midori firefox-esr freetype ttf-freefont wqy-zenhei@testing \ 
+    && rm -rf /tmp/* /var/cache/apk/*
 
 COPY docker-entrypoint.sh /usr/local/bin/
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
