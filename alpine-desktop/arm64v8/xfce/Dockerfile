@@ -11,8 +11,8 @@ ENV DISPLAY=:1 \
     VNC_PASSWORD=root
 
 RUN apk add --no-cache bash bash-completion alpine-desktop xfce4-terminal \
-    faenza-icon-theme libc6-compat xvfb x11vnc \
-    midori firefox-esr freetype ttf-freefont wqy-zenhei@testing \ 
+    # faenza-icon-theme libc6-compat xvfb x11vnc \
+    # midori firefox-esr freetype ttf-freefont wqy-zenhei@testing \ 
     && rm -rf /tmp/* /var/cache/apk/*
 
 COPY docker-entrypoint.sh /usr/local/bin/
