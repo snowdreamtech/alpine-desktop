@@ -12,7 +12,7 @@ ENV DISPLAY=:1 \
 
 RUN apk add --no-cache bash bash-completion alpine-desktop xfce4-terminal \
     faenza-icon-theme libc6-compat xvfb x11vnc \
-    wqy-zenhei@testing \ 
+    midori wqy-zenhei@testing \ 
     # midori freetype ttf-freefont wqy-zenhei@testing \ 
     && rm -rf /tmp/* /var/cache/apk/*
 
