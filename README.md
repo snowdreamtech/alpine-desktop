@@ -42,6 +42,10 @@ alpine-desktop:
 - Supported Tags:
   [alpine-desktop](https://cloud.docker.com/u/snowdreamtech/repository/docker/snowdreamtech/alpine-desktop/tags)
 
+## Preview
+
+![preview](preview.png)
+
 ## License
 
 Apache 2.0
