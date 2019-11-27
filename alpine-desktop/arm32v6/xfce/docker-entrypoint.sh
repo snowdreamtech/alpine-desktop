@@ -2,7 +2,7 @@
 set -e
 
 if [ ! -f "/root/.Xauthority" ]; then
-    touch /root/.Xauthorit
+    touch /root/.Xauthority
 fi
 
 if [ ! -d "/root/.vnc" ]; then
