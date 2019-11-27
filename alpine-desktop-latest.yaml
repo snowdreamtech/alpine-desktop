@@ -1,24 +1,24 @@
-image: snowdreamtech/alpine-xfce:latest
+image: snowdreamtech/alpine-desktop:latest
 manifests:
-  - image: snowdreamtechamd64/alpine-xfce:latest
+  - image: snowdreamtechamd64/alpine-desktop:latest
     platform:
       architecture: amd64
       os: linux
-  - image: snowdreamtechi386/alpine-xfce:latest
+  - image: snowdreamtechi386/alpine-desktop:latest
     platform:
       architecture: 386
       os: linux
-  - image: snowdreamtecharm32v6/alpine-xfce:latest
+  - image: snowdreamtecharm32v6/alpine-desktop:latest
     platform:
       architecture: arm
       os: linux
       variant: v6
-  - image: snowdreamtecharm32v7/alpine-xfce:latest
+  - image: snowdreamtecharm32v7/alpine-desktop:latest
     platform:
       architecture: arm
       os: linux
       variant: v7
-  - image: snowdreamtecharm64v8/alpine-xfce:latest
+  - image: snowdreamtecharm64v8/alpine-desktop:latest
     platform:
       architecture: arm64
       os: linux
